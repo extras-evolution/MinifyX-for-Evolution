@@ -1,13 +1,16 @@
 //<?php
 /**
- * MinifyX for MODX Evolution 
- * created by Agel_Nash
+ * MinifyX
+ * 
+ * Minify CSS and JS
  *
  * @category  plugin
- * @version   v 1.0
+ * @version   1.0
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU Public License (GPL)
+ * @internal  @properties 
+ * @internal  @events OnDocFormSave
  * @internal  @legacy_names MinifyX
- * @internal  @installset base, sample
- * @internal  @event OnDocFormSave
+ * @internal  @installset base
  */
  
 if($modx->Event->name=='OnDocFormSave'){
