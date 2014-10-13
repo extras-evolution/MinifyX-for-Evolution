@@ -1,8 +1,8 @@
 <?php
 /**
- * MinifyX
+ * css
  * 
- * Minify CSS and JS 
+ * Cache and Minify CSS
  *
  * @category  snippet
  * @version   1.0
@@ -10,10 +10,10 @@
  * @internal  @properties 
  * @internal  @legacy_names MinifyX
  * @internal  @modx_category Content
- * @internal    @installset base, sample
+ * @internal  @installset base, sample
  */
 
-include($modx->config['base_path']."assets/snippets/MinifyX/MinifyX.core.php");
+include($modx->config['base_path']."assets/snippets/cssjs/cssjs.core.php");
 $CSSfile=isset($CSSfile) ? $CSSfile : '';
 $JSfile=isset($JSfile) ? $JSfile : '';
 $CSSdoc=isset($CSSdoc) ? (int)$CSSdoc : 0;
