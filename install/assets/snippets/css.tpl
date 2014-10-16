@@ -1,4 +1,4 @@
-<?php
+//<?php
 /**
  * css
  * 
@@ -14,4 +14,3 @@
  */
 
 return require MODX_BASE_PATH.'assets/snippets/cssjs/snippet.css.php';
-?>
