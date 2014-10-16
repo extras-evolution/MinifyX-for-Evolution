@@ -21,23 +21,27 @@ Component CssJs for MODX Evolution
 
 	[!css? &files=`assets/templates/tpl/css/bootstrap.css,
 				   assets/js/prettify/prettify.css` 
-		   &inline=`body{width:100%}` &parse=`1` &minify=`1`!]
+		   &minify=`1`!]
 
 	[!js? &files=`assets/js/jquery-1.8.3.min.js,
 				  assets/templates/tpl/js/modernizr.custom.28468.js,
 				  assets/js/jquery.validate.js,
 				  assets/js/jquery.form.min.js,
 				  assets/js/prettify/prettify.js` 
-		  &inline=`$("#hide").hide();` &minify=`1`!]
+		  &minify=`1`!]
 
 	
 
 Параметры сниппета
 -------
 - **files** Список файлов с CSS стилями, которые нужно включить в конечный файл и сжать
-- **inline** Инлайн стили или скрипт которые нужно добавить или обработать 
 - **minify** - сжимать и обьеденять файлик 
-- **folder** в какую папку сохранять сжатый файл. По умолчанию assets/cache/
-- **parse** Обрабатывать ли MODX теги в параметре inline
+- **folder** в какую папку сохранять сжатый файл. По умолчанию корень сайта
 
+TODO
+-------
+- Сделать рабочей версию для JS 
+- Добавить обработку LESS
+- Добавить обработку SASS
+- Добавить обработку inline css и js 
 
