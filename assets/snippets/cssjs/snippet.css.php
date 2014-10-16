@@ -30,11 +30,11 @@ if ($minify == '1') {
 	include_once(MODX_BASE_PATH. "assets/snippets/cssjs/class.magic-min.php"); 
 	$minified = new Minifier();
 	$min = $minified->merge( MODX_BASE_PATH.$folder.'styles.min.css', 'css', $filesForMin );
-	return '<link rel="stylesheet" href="/'.$folder.'styles.min.css?v='.substr(md5(max($v)),0,3).'" />';
+	return '<link rel="stylesheet" href="'.$modx->config['site_url'].$folder.'styles.min.css?v='.substr(md5(max($v)),0,3).'" />';
 }else{
 	$links = '';
 	foreach ($filesArr as $key => $value) {
-		$links .= '<link rel="stylesheet" href="/'.trim($value).'?v='.substr(md5($v[$key]),0,3).'" />';	
+		$links .= '<link rel="stylesheet" href="'.$modx->config['site_url'].trim($value).'?v='.substr(md5($v[$key]),0,3).'" />';	
 	}	
 	return $links;
 }
