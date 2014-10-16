@@ -40,7 +40,6 @@ Component CssJs for MODX Evolution
 
 TODO
 -------
-- Сделать рабочей версию для JS 
 - Добавить обработку LESS
 - Добавить обработку SASS
 - Добавить обработку inline css и js 
