@@ -14,7 +14,7 @@ $parse = isset($parse) ? $parse : '0'; //обрабатывать ли теги 
 $files = explode(',', str_replace('\n', '', $files));
 foreach ($files as $key => $value) {
 	$file = MODX_BASE_PATH . trim($value);
-	$fileinfo = pathinfo($filename);
+	$fileinfo = pathinfo($file);
 	switch ($fileinfo['extension']) {
 		case 'css':
 		$files[$key] = $file;     
@@ -43,4 +43,4 @@ if ($minify == '1') {
 }
 //отдаем на сайт
 return '<link rel="stylesheet" href="/'.$folder.'styles.min.css" />';
-
+?>
