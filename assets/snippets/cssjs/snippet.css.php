@@ -3,7 +3,7 @@ if(!defined('MODX_BASE_PATH')) {die('What are you doing? Get out of here!');}
 
 //параметры
 $files = isset($files) ? $files : ''; // Список файлов (css, scss, less)
-$minify = isset($minify) ? $minify : '1'; //сжымать и минифицировать файлы
+$minify = isset($minify) ? $minify : '1'; //сжимать и минифицировать файлы
 $folder = isset($folder) ? $folder : ''; // папка для сгенерированных стилей по умолчанию в корень
 //$inline = isset($inline) ? $inline : ''; // инлайн код стилей
 //$parse = isset($parse) ? $parse : '0'; //обрабатывать ли теги MODX
